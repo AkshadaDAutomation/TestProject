@@ -1,0 +1,23 @@
+package pom.modules;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class RcommandedWishListModule {
+	@FindBy(xpath="//a[text()='View Your List']")
+	private WebElement viewWishListButton;
+	
+	public RcommandedWishListModule(WebDriver driver)
+	{
+		
+	PageFactory.initElements(driver,this);
+	}
+	
+	public void goToWishListPage()
+	{
+		viewWishListButton.click();
+	}
+
+}

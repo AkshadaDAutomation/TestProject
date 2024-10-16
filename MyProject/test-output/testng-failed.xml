@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="test.AmazonTestNg">
+        <methods>
+          <include name="logoutFromAmazon"/>
+          <include name="logInToAmazon"/>
+          <include name="verifyAddToCart"/>
+          <include name="verifyAddToWishlist"/>
+          <include name="intilasePOM"/>
+          <include name="closeBrower"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- test.AmazonTestNg -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
