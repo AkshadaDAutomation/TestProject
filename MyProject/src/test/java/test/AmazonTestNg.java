@@ -2,6 +2,18 @@ package test;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
 
 import base.Browser;
 
@@ -148,6 +160,8 @@ public class AmazonTestNg extends Browser{
 	
 	@Test
 	void verifyAddToWishlist() throws InterruptedException{
+		
+		//String testId = "11" ;
 		//amazonHomePage = new AmazonHomePage(driver);
 	    amazonHomePage.enterProductName("iphone  mobile");
 	    Thread.sleep(3000);
@@ -175,12 +189,15 @@ public class AmazonTestNg extends Browser{
 		
 		AssertJUnit.assertEquals(actualWishLishProductName, expectedWishListProductName);
 		AssertJUnit.assertEquals(actualWishLishProductPrice, expectedWishListProductPrice);
+		
 	}
 	
 	
 	
 	@AfterMethod 
-	void logoutFromAmazon() {
+	void logoutFromAmazon() throws InterruptedException {
+		
+	
 		driver.close();
 		driver.switchTo().window(addres.get(0));
 	amazonHomePage.clickOnLogOutButton();

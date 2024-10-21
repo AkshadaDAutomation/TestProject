@@ -1,6 +1,18 @@
 package test;
 
 	import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
+	import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
+	import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
+	import org.testng.annotations.AfterClass;
 	import org.testng.annotations.Test;
 	import org.testng.annotations.BeforeClass;
 	import org.testng.AssertJUnit;
@@ -64,7 +76,7 @@ import utlis.Utility;
 	
 		
 		@BeforeClass
-		void initilizePOM() {
+		void initilizePOM(){
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10000));

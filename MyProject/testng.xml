@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" thread-count="1"  >
-	
-  <test name="ChromeTest" thread-count="1">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
 	<parameter name="browser" value="Chrome"/>
-	<classes>
+    <classes>
+      
+      <class name="test.AmazonTestNg"/>
       <class name="test.AmazonTestNg2"/>
     </classes>
   </test> <!-- Test -->
-  
-  
-  
 </suite> <!-- Suite -->

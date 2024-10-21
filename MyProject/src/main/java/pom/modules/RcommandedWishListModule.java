@@ -19,5 +19,10 @@ public class RcommandedWishListModule {
 	{
 		viewWishListButton.click();
 	}
+	
+	private void syso() {
+		// TODO Auto-generated method stub
+
+	}
 
 }
