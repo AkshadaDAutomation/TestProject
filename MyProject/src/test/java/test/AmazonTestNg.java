@@ -153,8 +153,8 @@ public class AmazonTestNg extends Browser{
 		String actualProductName = amazonCartDetailsPage.getFirstProductName();
 		String actualProductPrice = amazonCartDetailsPage.getFirstProductPrice();
 		
-		AssertJUnit.assertEquals(actualProductName, expectedProductName);
-		AssertJUnit.assertEquals(actualProductPrice, expectedProductPrice);
+		AssertJUnit.assertEquals( expectedProductName,actualProductName);
+		AssertJUnit.assertEquals(expectedProductPrice, actualProductPrice);
 		Thread.sleep(3000);
 	}
 	
@@ -187,8 +187,8 @@ public class AmazonTestNg extends Browser{
 		String actualWishLishProductName= addtoWishListPage.getFirstProductName();
 		String actualWishLishProductPrice= addtoWishListPage.getFirstProductPrice();
 		
-		AssertJUnit.assertEquals(actualWishLishProductName, expectedWishListProductName);
-		AssertJUnit.assertEquals(actualWishLishProductPrice, expectedWishListProductPrice);
+		AssertJUnit.assertEquals(expectedWishListProductName,actualWishLishProductName);
+		AssertJUnit.assertEquals(expectedWishListProductPrice, actualWishLishProductPrice);
 		
 	}
 	
